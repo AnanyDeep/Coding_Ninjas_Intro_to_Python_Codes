@@ -1,0 +1,9 @@
+n=int(input())
+li=[int(x)for x in input().split()]
+start=int(input())
+op=[]
+for i in range(start):
+    a = li.pop(0)
+    li.append(a)
+
+print(*li)

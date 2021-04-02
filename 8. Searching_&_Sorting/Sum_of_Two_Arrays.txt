@@ -1,0 +1,44 @@
+## Read input as specified in the question.
+## Print output as specified in the question.
+## Read input as specified in the question.
+## Print output as specified in the question.
+n1 = int(input())
+l1 = [int(x) for x in input().split()]
+n2 = int(input())
+l2 = [int(x) for x in input().split()]
+a1 = []
+a2 = []
+
+if n1>n2:
+    a, b = n2, n1
+    a1, a2 = l2, l1
+    
+else:
+    a, b = n1, n2
+    a1, a2 = l1, l2
+
+i = a - 1
+j = b - 1
+k = b + 1
+ar = []
+for z in range (0, k):
+    ar.append(0)
+c = 0
+s = 0
+while i >= 0:
+    n = a1[i] + a2[j] + c
+    s = n%10
+    c = n//10
+    ar[k-1] = s
+    i -= 1
+    j -= 1
+    k -= 1
+while j >= 0:
+    n = a2[j] + c
+    s = n % 10
+    c = n // 10
+    ar[k - 1] = s
+    j = j - 1
+    k = k - 1
+    
+print(*ar)

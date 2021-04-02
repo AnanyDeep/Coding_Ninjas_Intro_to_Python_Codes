@@ -1,0 +1,13 @@
+n = int(input())
+l = [int(x) for x in input().split()]
+f = s = (-2**31)
+
+for j in range (0, n):
+    if l[j]>f:
+        s=f
+        f=l[j]
+            
+    elif l[j]>s and l[j] != f:
+        s = l[j]
+
+print(s)

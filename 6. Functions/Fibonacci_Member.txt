@@ -1,0 +1,25 @@
+
+def checkMember(n):
+
+    a=1
+    b=1
+    if n==0:
+      return True
+    elif n==1:
+      return True
+    else:
+      c = 2
+      while c<n: 
+        c = a + b 
+        a = b 
+        b = c
+      if n == c:
+        return True
+      else:
+        return False
+
+n=int(input())
+if(checkMember(n)):
+    print("true")
+else:
+    print("false")

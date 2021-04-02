@@ -1,0 +1,11 @@
+s = input()
+m = -1
+count = [0]*256
+c =''
+for i in s:
+    count[ord(i)]+=1
+for i in s:
+    if m<count[ord(i)]:
+        m=count[ord(i)]
+        c=i
+print(c)

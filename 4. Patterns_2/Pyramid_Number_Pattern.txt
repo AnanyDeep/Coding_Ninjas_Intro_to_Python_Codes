@@ -1,0 +1,20 @@
+num = int(input())
+row = 1
+while row<=num:
+  space = 1
+  while space<=num-row:
+    print(" ",end='')
+    space=space+1
+  p = 1
+  col = 1
+  while col<=row:
+    print(row-col+1,end="")
+    col=col+1
+    p=p+1
+  p=row-1
+  while p>=1:
+    print(row-p+1,end='')
+    p=p-1
+  print()
+  row=row+1
+    

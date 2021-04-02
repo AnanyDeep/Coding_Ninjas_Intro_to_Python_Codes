@@ -1,0 +1,10 @@
+num=int(input())
+for row in range(1,num**2+1,num*2):
+  for col in range (row,row+num):
+    print(col,end=" ")
+  print()
+for k in range(col+1,num,-(num*2)):
+  if (k<num**2+1):
+    for l in range (k,k+num):
+      print(l,end=" ")
+    print()

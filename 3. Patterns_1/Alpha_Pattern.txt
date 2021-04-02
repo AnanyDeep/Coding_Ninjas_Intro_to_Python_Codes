@@ -1,0 +1,10 @@
+num =int(input())
+row=1
+while row<=num:
+    col=1
+    while col<=row:
+        alpha=chr(ord('A')+row-1)
+        print(alpha,end='')
+        col=col+1
+    print()
+    row=row+1

@@ -1,0 +1,23 @@
+list_A = int(input())
+list_A = [int(x) for(x) in input().split()]
+list_B = int(input())
+list_B =[int(x) for (x) in input().split()]
+i=0
+j=0
+len1= len(list_A)
+len2= len(list_B)
+arr=[]
+while ((i<len1) and (j<len2)):
+    if(list_A[i]<list_B[j]):
+        arr.append(list_A[i])
+        i=i+1
+    else:
+        arr.append(list_B[j])
+        j=j+1
+while (i<(len1)):
+    arr.append(list_A[i])
+    i=i+1
+while (j<len2):
+    arr.append(list_B[j])
+    j=j+1
+print(*arr)

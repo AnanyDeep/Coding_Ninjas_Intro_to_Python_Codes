@@ -1,0 +1,10 @@
+list_A=int(input())
+list_A =[int(x) for x in input().split()]
+list_B=int(input())
+list_B=[int(x) for x in input().split()]
+for i in range(0, len(list_A)):
+    for j in range(0, len(list_B)):
+        if(list_A[i] == list_B[j]):
+            print(list_A[i])
+            list_B[j] = -100000000
+            break

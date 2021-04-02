@@ -1,0 +1,8 @@
+s = input()
+li = s.split( )
+c = ""
+for i in li:
+    rs = i[len(s)::-1]
+    c += rs +" "
+
+print(c)

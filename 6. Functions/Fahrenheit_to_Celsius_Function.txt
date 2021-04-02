@@ -1,0 +1,9 @@
+def cal():
+  s=int(input())
+  e=int(input())
+  w=int(input())
+  for start in range (s,e+1,w):
+    result= (start-32)*5/9
+    print(start," ",int(result)) 
+cal()
+

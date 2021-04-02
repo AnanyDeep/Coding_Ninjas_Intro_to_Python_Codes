@@ -1,0 +1,12 @@
+li = int(input())
+li = [int(x) for x in input().split()]
+count=0
+
+for i in range (len(li)):
+    if li[i]!=0:
+        li[count]=li[i]
+        count=count+1
+while count<len(li):
+    li[count]=0
+    count=count+1
+print(*li)

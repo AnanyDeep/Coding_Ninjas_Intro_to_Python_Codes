@@ -1,0 +1,33 @@
+## Read input as specified in the question.
+## Print output as specified in the question.
+def lenx(num):
+  if num == 0:
+    return 1
+  else:
+    a=0
+    while num>0:
+      a=a+1
+
+      num=num//10
+    return a
+
+
+
+
+def pali(num, l): 
+  
+  sum=0
+  temp=num
+  while num>0:
+      z=num%10
+      sum += (z**l)
+      num=num//10
+  
+  if temp==sum:
+      print("true")
+  else :
+      print ("false")
+
+num = int(input())
+l = lenx(num)
+pali(num , l)

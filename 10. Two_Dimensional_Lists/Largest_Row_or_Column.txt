@@ -1,0 +1,38 @@
+def largestRowCol(arr):
+    li = []
+    n = len(arr)
+    m = len(arr[0])
+    a1 = 0
+    z1 = 0
+    a2 = 0
+    z2 = 0
+    for i in range (n):
+        s = 0
+        for j in range(m):
+            s = s + arr[i][j]
+        if s > a1:
+            a1 = s
+            z1 = i
+    for j in range(m):
+        s2 = 0
+        for i in range(n):
+            s2 = s2 + arr[i][j]
+        if s2 > a2:
+            a2 = s2
+            z2 = j
+    if a1 >= a2 :
+        li.append("row")
+        li.append(z1)
+        li.append(a1)
+    else:
+        li.append("column")
+        li.append(z2)
+        li.append(a2)
+    return li
+
+#Main
+m, n=(int(i) for i in input().strip().split(' '))
+l=[int(i) for i in input().strip().split(' ')]
+arr = [ [ l[(j*n)+i] for i in range(n)] for j in range(m)]
+l=largestRowCol(arr)
+print(*l)

@@ -1,0 +1,12 @@
+num =int(input())
+row=1
+while row<=num:
+  col=1
+  while col<=row:
+    if col==1 or col==row:
+      print(1,end='')
+    else:
+      print(2,end='')
+    col=col+1
+  print()
+  row=row+1

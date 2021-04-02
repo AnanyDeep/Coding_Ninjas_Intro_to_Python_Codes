@@ -1,0 +1,32 @@
+l=True
+while l:
+    op =int(input())
+    if op==1:
+        num1 =int(input())
+        num2 =int(input())
+        print(num1+num2)
+        
+    elif op==2:
+        num1 =int(input())
+        num2 =int(input())
+        print(num1-num2)
+        
+    elif op==3:
+        num1 =int(input())
+        num2 =int(input())
+        print(num1*num2)
+        
+    elif op==4:
+        num1 =int(input())
+        num2 =int(input())
+        print(num1//num2)
+        
+    elif op==5:
+        num1 =int(input())
+        num2 =int(input())
+        print(num1%num2)
+        
+    elif op==6:
+        l=False
+    else :
+        print("Invalid Operation")

@@ -1,0 +1,15 @@
+def rowWiseSum(arr):
+    l = []
+    for row in arr:
+        sum=0
+        for ele in row:
+            sum=sum+ele
+        l.append(sum)
+    return l
+
+#Main
+m, n=(int(i) for i in input().strip().split(' '))
+l=[int(i) for i in input().strip().split(' ')]
+arr = [ [ l[(j*n)+i] for i in range(n)] for j in range(m)]
+l=rowWiseSum(arr)
+print(*l)

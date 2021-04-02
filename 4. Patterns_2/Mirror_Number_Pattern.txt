@@ -1,0 +1,14 @@
+num = int(input())
+row =1
+while row<=num:
+    space=1
+    while space <=num-row:
+        print(" ",end='')
+        space=space+1
+    stars=1
+    while stars <=row:
+        print(stars,end='')
+        stars=stars+1
+    print()
+    row=row+1
+    

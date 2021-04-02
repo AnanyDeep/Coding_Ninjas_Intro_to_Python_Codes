@@ -1,0 +1,6 @@
+list_A=int(input())
+list_A =[int(x) for x in input().split()]
+for i in range(0, len(list_A)):
+    for j in range(i+1, len(list_A)):
+        if(list_A[i] == list_A[j]):
+            print(list_A[j]);

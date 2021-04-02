@@ -1,0 +1,18 @@
+s = input()
+ste = []
+for i in range(len(s)):
+    ste.append(s[i])
+print(ste)
+print(len(ste))
+k = 0 
+while k<len(ste):
+    j=k+1
+    while j<len(ste):
+        if(ste[j]==ste[j]):
+            ste.remove(ste[j])
+            print(ste)
+            j+=1
+            continue
+    i+=1
+
+print(*ste)

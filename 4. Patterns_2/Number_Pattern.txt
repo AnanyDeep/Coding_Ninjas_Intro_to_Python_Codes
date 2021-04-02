@@ -1,0 +1,18 @@
+num = int(input())
+row=1
+while row<=num:
+  col=1
+  while col<=row:
+    print(col,end='')
+    col=col+1
+  space=2
+  while space<=num-row+1:
+    print("  ",end='')
+    space=space+1
+  c=1
+  while c<=row:
+    print(row-c+1,end='')
+    c=c+1
+  print()
+  row=row+1
+  

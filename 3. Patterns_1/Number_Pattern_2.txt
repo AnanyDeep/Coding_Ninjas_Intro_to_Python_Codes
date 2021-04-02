@@ -1,0 +1,16 @@
+num =int(input())
+row=1
+print(1)
+while row<num:
+  col= row
+  while col<=row :
+    print(row,end='')
+    if row>1:
+      K = 1
+      while K<row:
+        print(0,end='')
+        K = K + 1
+    print(row, end = '')
+    col=col+1
+  print()
+  row=row+1

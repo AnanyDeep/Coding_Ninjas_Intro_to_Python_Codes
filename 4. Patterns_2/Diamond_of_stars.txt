@@ -1,0 +1,27 @@
+n = int(input())
+i = 1
+x = n//2
+while i <= (x+1):
+    s = 1
+    while s <= (x - i +1):
+        print(" ", end='')
+        s = s + 1
+    j = 1
+    while j <= 2*i - 1:
+        print("*", end='')
+        j = j + 1
+   
+    print()
+    i = i + 1  
+i2 = x
+while i2 >= 1:
+    s2 = 1
+    while s2 <= x - i2 + 1:
+        print(" ", end='')
+        s2 = s2 + 1
+    j = 2*i2-1
+    while j >=1:
+      print("*", end ='')
+      j = j - 1
+    print()
+    i2 = i2 - 1

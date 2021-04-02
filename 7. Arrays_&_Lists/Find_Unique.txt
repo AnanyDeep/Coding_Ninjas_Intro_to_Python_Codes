@@ -1,0 +1,11 @@
+list_A = int(input())
+list_A=[int(x) for x in input().split()]
+list_B=[]
+for i in range(0,len(list_A)):
+    if(list_A[i] in list_B):
+        list_B.remove(list_A[i])
+    else:
+        list_B.append(list_A[i])
+
+print(*list_B)
+
